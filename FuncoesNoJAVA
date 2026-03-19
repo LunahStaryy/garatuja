@@ -47,3 +47,47 @@ Carro meuCarro = new Carro("Toyota", 2022);
 
 
 -- metodo get --
+
+Método get (getter) é amplamente utilizado no Java para acessar de forma segura e controlada os valores de atributos privados de uma classe. 
+Ele faz parte dos padrões de encapsulamento, geralmente acompanhado de um método set para modificação, permitindo leitura (get) e escrita (set) de dados.
+
+public class Pessoa {
+    private String nome; // Atributo privado
+
+    public String getNome() {
+        return nome;
+    }
+
+
+-- metodo set --
+
+Sim, o Java utiliza métodos set (setters) como parte do padrão de encapsulamento para atribuir ou modificar valores de atributos privados em uma classe. 
+Eles funcionam em par com os métodos get (getters), permitindo controle, validação e segurança dos dados, geralmente não retornando valor (void).
+
+
+
+public class Pessoa {
+    private String nome;
+
+    // Método SET
+    public void setNome(String nome) {
+        if (nome != null && !nome.isEmpty()) {
+            this.nome = nome;
+        }
+    }
+
+    // Método GET
+    public String getNome() {
+        return this.nome;
+    }
+}
+
+
+
+-- variavel --
+
+
+
+
+
+-- atributo --
