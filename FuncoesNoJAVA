@@ -1,0 +1,49 @@
+java vs javascript vs typescript
+
+function
+method
+method construtor
+method get
+method set
+variable
+atribute
+
+
+NO JAVA:
+
+
+-- Funções --
+
+Funções são chamadas de métodos e são blocos de código reutilizáveis dentro de uma classe que realizam tarefas específicas.
+
+public class Exemplo {
+    public static int soma(int a, int b) {
+    return a + b
+    }
+        public static void main(String[] args) {
+        int resultado = soma(5, 3);
+        System.out.println("Resultado: " + resultado);
+    }
+
+
+-- metodo construtor --
+
+Eles são blocos especiais de código usados para inicializar objetos no momento de sua criação (new), possuindo o mesmo nome da classe e sem tipo de retorno. 
+Toda classe tem um construtor padrão, mas construtores personalizados com parâmetros podem ser definidos para inicializar atributos. 
+
+public class Carro {
+    String marca;
+    int ano;
+
+    // Construtor
+    public Carro(String marca, int ano) {
+        this.marca = marca;
+        this.ano = ano;
+    }
+}
+
+// Chamada
+Carro meuCarro = new Carro("Toyota", 2022);
+
+
+-- metodo get --
