@@ -8,8 +8,10 @@ função de uma classe é um método
 this serve para pegar um objeto que nao 'existe' ainda
 deixa acessar informações de fora do metodo
 
+//
+
 metodo get
-fazer uma acao para chegar a um atributo
+-> fazer uma acao para definir a um atributo
 vai executar alguma coisa pra retornar um valor que e um atributo
 
 ex: executar um metodo para conseguir idade
@@ -17,9 +19,10 @@ da get porque vai retornar idade como atributo
 
 sempre que e necessario fazer um calculo pra conseguir atributo, se e get
 
+//
 
 metodo set
-
+-> uso quando preciso de uma forma executar uma acao antes de retornar um atributo
 metodo pra setar um valor de um atributo antes de ser definido
 
 
