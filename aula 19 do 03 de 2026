@@ -4,3 +4,24 @@ Aula dia 19/03/2026:
 
 variavel de uma classe é atributo
 função de uma classe é um método
+
+this serve para pegar um objeto que nao 'existe' ainda
+deixa acessar informações de fora do metodo
+
+metodo get
+fazer uma acao para chegar a um atributo
+vai executar alguma coisa pra retornar um valor que e um atributo
+
+ex: executar um metodo para conseguir idade
+da get porque vai retornar idade como atributo
+
+sempre que e necessario fazer um calculo pra conseguir atributo, se e get
+
+
+metodo set
+
+metodo pra setar um valor de um atributo antes de ser definido
+
+
+throw: joga o erro pra cima para que resolvam, é um tipo de return
+para o sistema/interface mostrar o erro
