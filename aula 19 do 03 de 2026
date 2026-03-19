@@ -28,3 +28,11 @@ metodo pra setar um valor de um atributo antes de ser definido
 
 throw: joga o erro pra cima para que resolvam, é um tipo de return
 para o sistema/interface mostrar o erro
+
+//
+
+
+
+public: qualquer momento consegue accessar o valor do atributo
+
+private: atributo so pode ser acessado dentro da propria classe
