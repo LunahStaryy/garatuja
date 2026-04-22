@@ -1,0 +1,28 @@
+Bun.serve({
+    port: 2005,
+    routes: {
+        "/nao": () => new Response("Parabéns, você não deu permissão para eu lançar o meu míssil. Aff T_T"),
+        "/sim": () => new Response("Agora tenho permissão para explodir sua casa. Corra :3")
+    },
+
+    fetch(request) {
+        return new Response(Bun.file("we.html"))
+    }
+})
+
+console.log("Servidor rodando :)")
+
+
+arquivo we.html
+
+
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+</head>
+<body>
+    UOU você chegou aqui. Como?? Bom, responda <a href="sim">/sim</a> ou <a href="nao">/nao</a>
+</body>
+</html>
