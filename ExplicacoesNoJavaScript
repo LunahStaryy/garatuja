@@ -15,35 +15,28 @@ NO JAVASCRIPT:
 
 Funções são blocos de código reutilizáveis dentro de uma classe que realizam tarefas específicas.
 
-public class Exemplo {
-    public static int soma(int a, int b) {
-    return a + b
-    }
-        public static void main(String[] args) {
-        int resultado = soma(5, 3);
-        System.out.println("Resultado: " + resultado);
-    }
+// Definindo a função
+function saudacao(nome) {
+    return "Olá, " + nome + "! Bem-vindo.";
+}
+
+// Chamando a função
+let mensagem = saudacao("Maria");
+console.log(mensagem); // Saída: Olá, Maria! Bem-vindo.
 
 -- Métodos --
 
 São o mesmo conceito de funções, mas aplicadas e presentes dentro das classes, executando ações para um objeto.
 
-public class Calculadora {
-    // Método de instância
-    public int somar(int a, int b) {
-        return a + b;
-    }
+// Exemplo de definição e uso de um método
+const saudacao = {
+  nome: "Usuário",
+  falarOla: function() {
+    console.log(`Olá, ${this.nome}!`);
+  }
+};
 
-    // Método estático
-    public static void exibirMensagem() {
-        System.out.println("Bem-vindo à calculadora!");
-    }
-}
-
-// Chamada
-Calculadora.exibirMensagem(); // Chamando método estático
-Calculadora calc = new Calculadora();
-int resultado = calc.somar(5, 3); // Chamando método de instância
+saudacao.falarOla(); // Saída: Olá, Usuário!
 
 
 -- metodo construtor --
@@ -51,88 +44,88 @@ int resultado = calc.somar(5, 3); // Chamando método de instância
 Eles são blocos especiais de código usados para inicializar objetos no momento de sua criação (new), possuindo o mesmo nome da classe e sem tipo de retorno. 
 Toda classe tem um construtor padrão, mas construtores personalizados com parâmetros podem ser definidos para inicializar atributos. 
 
-public class Carro {
-    String marca;
-    int ano;
-
-    // Construtor
-    public Carro(String marca, int ano) {
-        this.marca = marca;
-        this.ano = ano;
-    }
+class Pessoa {
+  constructor(nome, idade) {
+    this.nome = nome;
+    this.idade = idade;
+  }
+  saudacao() {
+    return `Olá, meu nome é ${this.nome}.`;
+  }
 }
-
-// Chamada
-Carro meuCarro = new Carro("Toyota", 2022);
+const joao = new Pessoa("João", 30);
+console.log(joao.saudacao()); // Olá, meu nome é João.
 
 
 -- metodo get --
 
-Método get (getter) é amplamente utilizado no Java para acessar de forma segura e controlada os valores de atributos privados de uma classe. 
+Método get (getter) é amplamente utilizado no Javascript para acessar de forma segura e controlada os valores de atributos privados de uma classe. 
 Ele faz parte dos padrões de encapsulamento, geralmente acompanhado de um método set para modificação, permitindo leitura (get) e escrita (set) de dados.
 
-public class Pessoa {
-    private String nome; // Atributo privado
-
-    public String getNome() {
-        return nome;
-    }
+const usuario = {
+  nome: 'Ana',
+  sobrenome: 'Silva',
+  get nomeCompleto() {
+    return `${this.nome} ${this.sobrenome}`;
+  }
+};
+console.log(usuario.nomeCompleto); // Ana Silva
 
 
 -- metodo set --
 
-O Java utiliza métodos set (setters) como parte do padrão de encapsulamento para atribuir ou modificar valores de atributos privados em uma classe. 
+O Javascript utiliza métodos set (setters) como parte do padrão de encapsulamento para atribuir ou modificar valores de atributos privados em uma classe. 
 Eles funcionam em par com os métodos get (getters), permitindo controle, validação e segurança dos dados, geralmente não retornando valor (void).
 
 
 
-public class Pessoa {
-    private String nome;
+// Criando um Set com valores duplicados
+const numeros = new Set([1, 2, 2, 3, 4, 4, 4, 5]);
 
-    // Método SET
-    public void setNome(String nome) {
-        if (nome != null && !nome.isEmpty()) {
-            this.nome = nome;
-        }
-    }
+// Adicionando um novo valor
+numeros.add(6);
 
-    // Método GET
-    public String getNome() {
-        return this.nome;
-    }
-}
+// Tentando adicionar um valor que já existe
+numeros.add(2); // Nada acontece
+
+console.log(numeros); // Saída: Set(6) { 1, 2, 3, 4, 5, 6 }
+console.log(numeros.size); // Saída: 6
+
+// Iterando sobre o Set
+numeros.forEach(num => console.log(num));
+
 
 
 
 -- variavel --
 
-Variáveis em Java são contêineres para armazenar dados, exigindo declaração explícita do tipo e nome. 
+São contêineres para armazenar dados, exigindo declaração explícita do tipo e nome. 
 Elas guardam valores na memória que podem mudar, exceto as constantes (final). Tipos primitivos (int, double, boolean, char) e de referência (String, objetos) definem o que a variável armazena. 
 O escopo define onde ela é acessível.
 
-int i = 5
-
+let nome = "Maria";      
+let idade = 30;          
+const PI = 3.14;        
+var antigo = "Legacy";   
 
 
 -- atributo --
 
 
-public class Carro {
-    // Atributos (melhor prática: private)
-    private String modelo;
-    private int ano;
-    private static int totalCarros; // Atributo estático
-
-    // Construtor
-    public Carro(String modelo, int ano) {
-        this.modelo = modelo;
-        this.ano = ano;
-        totalCarros++; // Incrementa o total ao criar um carro
+// Exemplo de Objeto com Atributos
+const pessoa = {
+    nome: "João",
+    idade: 25,
+    saudacao: function() {
+        console.log("Olá!");
     }
-}
+};
+
+console.log(pessoa.nome); // Acessando o atributo 'nome'
+pessoa.idade = 26;        // Modificando o atributo 'idade'
 
 
-Atributos em Java são variáveis declaradas dentro de uma classe que definem o estado, propriedades ou características de um objeto.
+Atributos em Javascript são variáveis declaradas dentro de uma classe que definem o estado, propriedades ou características de um objeto.
 
 Eles armazenam dados específicos para cada instância (não estáticos) ou compartilhados pela classe (estáticos/static),
 suportando encapsulamento através de modificadores de acesso como private (recomendado), public ou protected.
