@@ -1,20 +1,19 @@
 java vs javascript vs typescript
 
-function
-method
-method construtor
-method get
-method set
-variable
-atribute
-
+function - 
+method - 
+method construtor -  
+method get - 
+method set - 
+variable - 
+atribute -  
 
 NO JAVA:
 
 
 -- Funções --
 
-Funções são chamadas de métodos e são blocos de código reutilizáveis dentro de uma classe que realizam tarefas específicas.
+Funções são blocos de código reutilizáveis dentro de uma classe que realizam tarefas específicas.
 
 public class Exemplo {
     public static int soma(int a, int b) {
@@ -24,6 +23,19 @@ public class Exemplo {
         int resultado = soma(5, 3);
         System.out.println("Resultado: " + resultado);
     }
+
+-- Métodos --
+
+São o mesmo conceito de funções, mas aplicadas e presentes dentro das classes, executando ações para um objeto.
+
+const zeus = {
+    nome: 'Zeus',
+    raca: 'Vira-Lata',
+    idade: 7,
+    latir: function (){
+        console.log('Au au au au!');
+    }
+}
 
 
 -- metodo construtor --
