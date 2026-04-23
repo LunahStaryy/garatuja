@@ -28,14 +28,22 @@ public class Exemplo {
 
 São o mesmo conceito de funções, mas aplicadas e presentes dentro das classes, executando ações para um objeto.
 
-const zeus = {
-    nome: 'Zeus',
-    raca: 'Vira-Lata',
-    idade: 7,
-    latir: function (){
-        console.log('Au au au au!');
+public class Calculadora {
+    // Método de instância
+    public int somar(int a, int b) {
+        return a + b;
+    }
+
+    // Método estático
+    public static void exibirMensagem() {
+        System.out.println("Bem-vindo à calculadora!");
     }
 }
+
+// Chamada
+Calculadora.exibirMensagem(); // Chamando método estático
+Calculadora calc = new Calculadora();
+int resultado = calc.somar(5, 3); // Chamando método de instância
 
 
 -- metodo construtor --
