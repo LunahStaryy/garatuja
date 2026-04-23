@@ -1,0 +1,21 @@
+O que o super faz?
+-- Ele ajuda a subclasse a acessar metodos e atributos da classe pai 
+
+O que o this faz?
+-- Ele diz que o atributo ou objeto que vai estar tentando acessar ou se referir naquela linha de código é um presente na classe, e não um novo. 
+Aquele que está sendo executado naquela instância.
+
+class Usuario {
+  nome: string;
+
+  constructor(nome: string) {
+    this.nome = nome; // 'this' refere-se à nova instância
+  }
+
+  saudar() {
+    console.log(`Olá, ${this.nome}`); // 'this' refere-se ao objeto usuario
+  }
+}
+
+const user = new Usuario("João");
+user.saudar();
