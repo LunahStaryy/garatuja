@@ -106,33 +106,39 @@ public class Pessoa {
 
 -- variavel --
 
-Variáveis em Java são contêineres para armazenar dados, exigindo declaração explícita do tipo e nome. 
-Elas guardam valores na memória que podem mudar, exceto as constantes (final). Tipos primitivos (int, double, boolean, char) e de referência (String, objetos) definem o que a variável armazena. 
-O escopo define onde ela é acessível.
+São contêineres para armazenar dados.
 
-int i = 5
+let nome: string = "João";
+const idade: number = 25;
 
 
 
 -- atributo --
 
 
-public class Carro {
-    // Atributos (melhor prática: private)
-    private String modelo;
-    private int ano;
-    private static int totalCarros; // Atributo estático
+class Usuario {
+    // Atributos
+    public id: number;
+    private _email: string; // Uso de _ é comum para indicar "privado"
+    protected criadoEm: Date;
 
-    // Construtor
-    public Carro(String modelo, int ano) {
-        this.modelo = modelo;
-        this.ano = ano;
-        totalCarros++; // Incrementa o total ao criar um carro
+    constructor(id: number, email: string) {
+        this.id = id;
+        this._email = email;
+        this.criadoEm = new Date();
+    }
+
+    exibirEmail(): string {
+        return this._email; // Acesso permitido dentro da classe
     }
 }
 
+const user = new Usuario(1, "teste@exemplo.com");
+console.log(user.id); // OK
+// console.log(user._email); // Erro: _email é privado
 
-Atributos em Java são variáveis declaradas dentro de uma classe que definem o estado, propriedades ou características de um objeto.
+
+São variáveis declaradas dentro de uma classe que definem o estado, propriedades ou características de um objeto.
 
 Eles armazenam dados específicos para cada instância (não estáticos) ou compartilhados pela classe (estáticos/static),
 suportando encapsulamento através de modificadores de acesso como private (recomendado), public ou protected.
