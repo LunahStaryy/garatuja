@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Perfil WOWWW</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="titulo"> Página Super Legal </h1>
+    <aside>
+        <div class="thumb" id="teste">
+            <img src="https://i.pinimg.com/564x/ed/e1/8f/ede18fdf46110bbcb0180914b5505461.jpg" id="elphett">
+            <p id="fala">Write your name here and then we can start our life together! I don't care if it's small but
+                I'd like a nice home in the suburbs...and four kids! Would you want a dog? Or a cat? I like dogs. But
+                cats are okay too! Dogs are just so friendly and happy and we can snuggle up with a dog in bed and say
+                'I love you, dear--' O-Oh my gosh, I-I can't--!</p>
+            <p>― Elphelt Valentine</p>
+        </div>
+        <section>
+
+        </section>
+
+        <div id="ladinho">
+            <img src="https://i.makeagif.com/media/8-29-2024/G7bi1s.gif" id="gifladinho">
+
+        </div>
+    </aside>
+    <main>
+
+
+        </div>
+        <div id="caixa1" class="caixa1">
+
+
+
+            <article>
+
+                <p id="paragrafo1" class="explicacao"> - Meu nome é Elphelt Valentine!!</p>
+                <p id="paragrafo2" class="explicacao"> - Eu venho do jogo de luta Guilty Gear :D</p>
+                <p id="paragrafo3" class="explicacao"> - Eu sou uma Valentine junto com a Ramlethall e Jack-O!!</p>
+                <p id="paragrafo4" class="explicacao"> - Gosto de rock >:3 </p>
+                <p id="paragrafo5" class="explicacao"> - Bora cantar?</p>
+                <p id="paragrafo6" class="explicacao"> - Huehuehuehuhe</p>
+                <p id="paragrafo7" class="explicacao"> - Alguém viu o Bedman?? A Nightingale tá perguntando</p>
+            </article>
+
+            <img src="https://64.media.tumblr.com/13866a3972d9f2ef9b8850aec227a683/e72758242612dc3a-54/s400x600/4c3e155aa6d7d381eb1cab87158e155a84934971.gifv"
+                id="tamanho2">
+            <img src="https://64.media.tumblr.com/5736ba09641213c9e0116b0935fe6a5d/5d9047d3ed0ccdf8-d4/s540x810/08248684c5415ff82ed384238e85ff3a1e61b72b.gifv"
+                id="tamanho">
+
+        </div>
+        <div class="container">
+
+            <div id="caixa2" class="caixinhas">
+                <img src="https://i.pinimg.com/564x/c3/33/b4/c333b4bbcd537f07a38f21fde16c7b2a.jpg" class="photo">
+                <article>
+
+                </article>
+            </div>
+
+            <div id="caixa3" class="caixinhas">
+                <img src="https://i.pinimg.com/564x/26/ce/d3/26ced390df47393fe958e274378c04c5.jpg" class="photo">
+                <article>
+
+                </article>
+            </div>
+
+            <div id="caixa4" class="caixinhas">
+                <img src="https://i.pinimg.com/564x/52/cf/d1/52cfd1b7353b9d4754d8662da7c4ed68.jpg" class="photo">
+                <article>
+
+                </article>
+            </div>
+
+
+        </div>
+
+
+        <div id="embaixo" class="DIVAO">
+
+            <div class="separador1">
+                <img src="https://i.makeagif.com/media/4-04-2024/bazhzW.gif" id="cyngif" class="cyn ladinho">
+                <p class="textocyn">hello HUmaN.</p>
+                <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZXh5ZGh4Z2p0Z25xaTFvamc4NGM2aXRsM2tjNGtiOWhlbjF0NDV6ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lbIzto7fHDsXJwtc4K/giphy.gif"
+                    id="taptap">
+            </div>
+
+            <div class="separador2">
+                <img src="https://i.pinimg.com/originals/b7/c8/85/b7c885c7eba1adccb4d3f2c687b96ad3.gif" id="cyngif2"
+                    class="cyn">
+                <p class="textocyn" id="textBLEH">ow.</p>
+                <p class="textocyn" id="uwaa"> CALLBACK.PING</p>
+                <p class="textocyn" id="uw">NaMe mE CYn. ABSOlutE sOLVer.</p>
+                <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHdtYXd4Ynl5cjVhbDFibnYxcTRobnVjdzZsdGlkc2hzZ3E4bGRjYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QWAlspIuvCOSm2Nqsv/giphy.gif"
+                    id="silly">
+            </div>
+
+
+
+
+        </div>
+
+
+
+    </main>
+</body>
+
+</html>
