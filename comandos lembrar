@@ -1,0 +1,11 @@
+commandos
+
+
+git pull
+git add --all
+git commit -m "coisas a comentar"
+git push
+
+
+
+git clone https://<<chave>>@github.com/LunahStaryy/prog-1-tri-2-ativ-1 projeto
